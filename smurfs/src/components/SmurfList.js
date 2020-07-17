@@ -26,14 +26,16 @@ const SmurfList = props => {
                         style={{
                             border:"1px solid black", 
                             boxShadow:'0 3px 5px 2px rgba(255, 105, 135, .3)',
-                            padding: '30px'
+                            padding: '80px 30px',
+                            width: '400px',
+                            
                         }}
                         >
                             <div>
-                                {smurf.name}
+                                <span>Name:</span> {smurf.name}
                             </div> 
-                            <p>{smurf.age}</p>
-                            <p>{smurf.height}</p>
+                            <p> <span>Age:</span> {smurf.age} </p>
+                            <p> <span>Height:</span> {smurf.height}</p>
                         </div>
                     ))}
                 </div>
