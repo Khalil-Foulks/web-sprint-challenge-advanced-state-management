@@ -7,6 +7,9 @@ body{
 
 .wrapper{
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 span{
@@ -20,4 +23,5 @@ input{
 .card{
   background-color: rgb(66, 57, 192);
   color: aliceblue;
+  margin: 20px;
 }
