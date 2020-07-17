@@ -21,7 +21,14 @@ const SmurfList = props => {
                     style={{display: "flex", flexWrap:"wrap", justifyContent: "space-evenly"}}
                 >
                     {smurfs.map(smurf =>(
-                        <div key = {smurf.id}>
+                        <div 
+                        key = {smurf.id} 
+                        style={{
+                            border:"1px solid black", 
+                            boxShadow:'0 3px 5px 2px rgba(255, 105, 135, .3)',
+                            padding: '30px'
+                        }}
+                        >
                             <div>
                                 {smurf.name}
                             </div> 

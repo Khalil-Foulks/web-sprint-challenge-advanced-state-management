@@ -20,3 +20,23 @@ export const fetchSmurfs = () => {
             })
     }
 }
+
+//-------------------------POST SMURF--------------------------------------------------
+
+export const ADDING_SMURF = 'ADDING_SMURF';
+export const ADD_SMURF = 'ADD_SMURF';
+
+export const addSmurfs = smurf => {
+    console.log('post')
+    return dispatch => {
+        dispatch({ type: ADDING_SMURF });
+        axios.post(URL, smurf)
+            .then(res => {
+                console.log('post res', res)
+                dispatch({ type: ADD_SMURF, payload: res.data})
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+}
