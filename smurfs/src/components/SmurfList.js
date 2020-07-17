@@ -9,8 +9,7 @@ const SmurfList = props => {
     }, [])
 
     return(
-        <div>
-            <h2>Smurf Component Renders</h2>
+        <div className="wrapper">
             {isLoading && <h4>Loading Smurfs..</h4>}
             {error && (
                 <p className='error'>Uh oh, something happened... {props.error}</p>
@@ -23,6 +22,7 @@ const SmurfList = props => {
                     {smurfs.map(smurf =>(
                         <div 
                         key = {smurf.id} 
+                        className = "card"
                         style={{
                             border:"1px solid black", 
                             boxShadow:'0 3px 5px 2px rgba(255, 105, 135, .3)',
